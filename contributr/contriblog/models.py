@@ -24,7 +24,7 @@ class Post(models.Model):
     edited_date = models.DateTimeField(auto_now=True)
     publish = models.BooleanField(default=False)
     slug = models.SlugField(max_length=200, unique=True)
-    tags = models.ManyToManyField(Tag)
+    tags = models.ManyToManyField(Tag, blank=True)
 
     objects = PostQuerySet.as_manager()
 

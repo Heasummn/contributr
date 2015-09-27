@@ -42,6 +42,11 @@
           <ul class="nav navbar-nav">
             <li><a href="{%url 'blog:index' %}">Blog</a></li>
             <li><a href="https://github.com/Djenesis/contributr">GitHub</a></li>
+        </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="{% url 'blog:postNew' %}"><span class="glyphicon glyphicon-plus"></span></a>
+            </li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
